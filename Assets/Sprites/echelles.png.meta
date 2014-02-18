@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 2bb3fcaea9047ad40bb8328b205febab
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: echelles_0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 659
+        width: 133
+        height: 262
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: Greg_climb-1
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 659
+        width: 142
+        height: 272
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: echelles_2
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 589
+        width: 182
+        height: 342
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: echelles_3
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 579
+        width: 182
+        height: 342
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: echelles_4
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 379
+        width: 142
+        height: 232
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: Greg_climb-2
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 379
+        width: 142
+        height: 242
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: climbing_ladder
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 59
+        width: 103
+        height: 392
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: echelles_7
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 69
+        width: 133
+        height: 263
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: Greg_climb-3
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 69
+        width: 142
+        height: 272
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: echelles_9
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 59
+        width: 182
+        height: 302
+      alignment: 7
+      pivot: {x: .5, y: 0}
+  spritePackingTag: 
+  userData: 
