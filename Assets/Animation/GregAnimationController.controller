@@ -134,7 +134,7 @@ Transition:
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
---- !u!1101 &110130760
+--- !u!1101 &110153542
 Transition:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
@@ -145,8 +145,8 @@ Transition:
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Jump
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -229,7 +229,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 15702bc7668f75248907006d126f1ece, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 324, y: 192, z: 0}
+  m_Position: {x: 336, y: 192, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -272,9 +272,9 @@ StateMachine:
     data:
       first: {fileID: 110200000}
       second:
-      - {fileID: 110130760}
       - {fileID: 110175207}
       - {fileID: 110121294}
+      - {fileID: 110153542}
     data:
       first: {fileID: 110224563}
       second:
