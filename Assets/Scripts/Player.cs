@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-	private bool currentlySelected;
+	private bool currentlySelected = GameObject.FindGameObjectWithTag("Greg");
 	private Rigidbody2D body;
 	public int moveForce;
 	public int jumpForce;

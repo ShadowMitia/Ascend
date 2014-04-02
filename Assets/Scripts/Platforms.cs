@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Platforms : MonoBehaviour {
 
+	public GameObject controlledBy;
     public bool goesUp = false;
     protected int currentDistance;
     public int distanceMax;
@@ -16,8 +17,8 @@ public class Platforms : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        pos = GetComponent<Transform>();
-		originalPos = GetComponent<Transform> ();
+		pos = GetComponent<Transform> ();
+
         currentDistance = 0;
     }
 
@@ -45,6 +46,12 @@ public class Platforms : MonoBehaviour {
 
 
 	void FixedUpdate(){
+
+		if (controlledBy != null && (controlledBy.rigidbody2D.velocity.x != 0 || controlledBy.rigidbody2D.velocity.y != 0) ) {
+						fixedPlatform = false;
+				} else if (controlledBy != null) {
+			fixedPlatform = true;
+				}
 
 		if (fixedPlatform == false && stopped != true) {
 			if (goesPositive) {
