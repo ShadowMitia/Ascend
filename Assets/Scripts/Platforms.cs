@@ -18,40 +18,20 @@ public class Platforms : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		pos = GetComponent<Transform> ();
-
-        currentDistance = 0;
-    }
-
-	/*
-	void OnCollisionEnter2D(Collision2D collision){
-		if (collision.collider.name == "Paolo") {
-			fixedPlatform = true;
-			Debug.Log("FIXATION");
-				}
-		}
-
-
-	void OnCollisionExit2D(Collision2D collision){
-	if (collision.collider.name == "Paolo") {
-		fixedPlatform = false;
-			Debug.Log("PAAAS FIXATION");
+		currentDistance = 0;
 	}
-}
-*/
-
 
     // Update is called once per frame
     void Update () {
-    }
+		if (controlledBy != null && (controlledBy.rigidbody2D.velocity.x != 0 || controlledBy.rigidbody2D.velocity.y != 0) ) {
+			fixedPlatform = false;
+		} else if (controlledBy != null) {
+			fixedPlatform = true;
+		}
+    } 
 
 
 	void FixedUpdate(){
-
-		if (controlledBy != null && (controlledBy.rigidbody2D.velocity.x != 0 || controlledBy.rigidbody2D.velocity.y != 0) ) {
-						fixedPlatform = false;
-				} else if (controlledBy != null) {
-			fixedPlatform = true;
-				}
 
 		if (fixedPlatform == false && stopped != true) {
 			if (goesPositive) {
@@ -84,7 +64,4 @@ public class Platforms : MonoBehaviour {
 			}
 		}
 	}
-
-
-
 }

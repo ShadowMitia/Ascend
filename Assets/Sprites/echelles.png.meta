@@ -45,7 +45,7 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: echelles_0
+    - name: Paolo_climb-1
       rect:
         serializedVersion: 2
         x: 189
@@ -63,7 +63,7 @@ TextureImporter:
         height: 272
       alignment: 7
       pivot: {x: .5, y: 0}
-    - name: echelles_2
+    - name: Bob_climb_3
       rect:
         serializedVersion: 2
         x: 649
@@ -72,7 +72,7 @@ TextureImporter:
         height: 342
       alignment: 7
       pivot: {x: .5, y: 0}
-    - name: echelles_3
+    - name: Bob_climb-1
       rect:
         serializedVersion: 2
         x: 889
@@ -81,7 +81,7 @@ TextureImporter:
         height: 342
       alignment: 7
       pivot: {x: .5, y: 0}
-    - name: echelles_4
+    - name: Paolo_climb-2
       rect:
         serializedVersion: 2
         x: 189
@@ -108,7 +108,7 @@ TextureImporter:
         height: 392
       alignment: 7
       pivot: {x: .5, y: 0}
-    - name: echelles_7
+    - name: Paolo_climb-3
       rect:
         serializedVersion: 2
         x: 198
@@ -126,7 +126,7 @@ TextureImporter:
         height: 272
       alignment: 7
       pivot: {x: .5, y: 0}
-    - name: echelles_9
+    - name: Bob_climb-2
       rect:
         serializedVersion: 2
         x: 649
@@ -135,5 +135,14 @@ TextureImporter:
         height: 302
       alignment: 7
       pivot: {x: .5, y: 0}
+    - name: echelles_10
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 195
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 

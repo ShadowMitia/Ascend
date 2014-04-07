@@ -8,28 +8,34 @@ public class MainCharacterController : MonoBehaviour {
 	private GameObject character;
 	
 	void Awake(){
-		character = GameObject.Find("Greg");
+		controlledCharacterText.text = "Greg";
 	}
 	
 	// Use this for initialization
 	void Start () {
-		
+		character = GameObject.Find("Greg");
 	}
-	
+
+	public GUIText controlledCharacterText;
+
+
 	// Update is called once per frame
 
 	void Update () {
 		
 		if (Input.GetKeyDown ("1")) {
 			character = GameObject.Find("Greg");
+			controlledCharacterText.text = "Greg";
 			currentSelection = 0;
 			Debug.Log ("Greg");
 		} else if (Input.GetKeyDown ("2") && numberCharactersLevel > 1) {
 			character = GameObject.Find("Paolo");
+			controlledCharacterText.text = "Paolo";
 			currentSelection = 1;
 			Debug.Log ("Paolo");
 			
 		} else if (Input.GetKeyUp ("3") && numberCharactersLevel > 2) {
+			controlledCharacterText.text = "Bob";
 			character = GameObject.Find ("Bob");
 			currentSelection = 2;
 			Debug.Log ("Bob");

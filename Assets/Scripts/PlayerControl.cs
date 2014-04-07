@@ -10,7 +10,6 @@ public class PlayerControl : MonoBehaviour
 
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
-	//public AudioClip[] jumpClips;	// Array of clips for when the player jumps.
 	private float distToGround;
 	public float jumpForce = 1000f;			// Amount of force added when the player jumps.
 	public bool grounded = false;			// Whether or not the player is grounded.
@@ -25,9 +24,6 @@ public class PlayerControl : MonoBehaviour
 
 	void Awake()
 	{
-		currentCharacter = GameObject.Find ("Greg");
-		currentCharacter = GameObject.Find ("Paolo");
-		currentCharacter = GameObject.Find ("Bob");
 
 	}
 
@@ -36,8 +32,14 @@ public class PlayerControl : MonoBehaviour
 		currentCharacter = GameObject.Find ("Greg");
 		// Setting up references.
 		anim = GetComponent<Animator>();
-		}
 
+	}
+
+
+
+//	void OnGUI(){
+//		GUI.Box (new Rect (10,10,100,90), "Loader Menu");
+//	}
 
 	
 
@@ -58,81 +60,61 @@ public class PlayerControl : MonoBehaviour
 
 	void FixedUpdate (){
 		if (currentCharacter == true) {
-						// Cache the horizontal input.
-						float h = Input.GetAxis ("Horizontal");
+			// Cache the horizontal input.
+			float h = Input.GetAxis ("Horizontal");
 
-						// The Speed animator parameter is set to the absolute value of the horizontal input.
-						anim.SetFloat ("Speed", Mathf.Abs (h));
+			anim.SetFloat ("Speed", Mathf.Abs (h));
 
-						// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
-						if (h * rigidbody2D.velocity.x < maxSpeed)
-			// ... add a force to the player.
-								rigidbody2D.AddForce (Vector2.right * h * moveForce);
+			// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
+			if (h * rigidbody2D.velocity.x < maxSpeed)
+// ... add a force to the player.
+					rigidbody2D.AddForce (Vector2.right * h * moveForce);
 
-						// If the player's horizontal velocity is greater than the maxSpeed...
-						if (Mathf.Abs (rigidbody2D.velocity.x) > maxSpeed)
-			// ... set the player's velocity to the maxSpeed in the x axis.
-								rigidbody2D.velocity = new Vector2 (Mathf.Sign (rigidbody2D.velocity.x) * maxSpeed, rigidbody2D.velocity.y);
+			// If the player's horizontal velocity is greater than the maxSpeed...
+			if (Mathf.Abs (rigidbody2D.velocity.x) > maxSpeed)
+// ... set the player's velocity to the maxSpeed in the x axis.
+					rigidbody2D.velocity = new Vector2 (Mathf.Sign (rigidbody2D.velocity.x) * maxSpeed, rigidbody2D.velocity.y);
 
-						// If the input is moving the player right and the player is facing left...
-						if (h > 0 && !facingRight)
-			// ... flip the player.
-								Flip ();
-		// Otherwise if the input is moving the player left and the player is facing right...
-		else if (h < 0 && facingRight)
-			// ... flip the player.
-								Flip ();
-						//If the player is falling
-						if (!grounded) {
-								anim.SetTrigger ("Fall");
+			// If the input is moving the player right and the player is facing left...
+			if (h > 0 && !facingRight)
+// ... flip the player.
+					Flip ();
+// Otherwise if the input is moving the player left and the player is facing right...
+else if (h < 0 && facingRight)
+// ... flip the player.
+					Flip ();
+			//If the player is falling
+			if (!grounded) {
+					anim.SetTrigger ("Fall");
 
-						}
-						// If the player should jump...
-						if (jump) {
+			}
+			// If the player should jump...
+			if (jump) {
 
-								grounded = false;
-								// Set the Jump animator trigger parameter.
-								anim.SetTrigger ("Jump");
+					grounded = false;
+					// Set the Jump animator trigger parameter.
+					anim.SetTrigger ("Jump");
 
-								// Play a random jump audio clip.
-								//int i = Random.Range(0, jumpClips.Length);
-								//AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
+					// Play a random jump audio clip.
+					//int i = Random.Range(0, jumpClips.Length);
+					//AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
 
-								// Add a vertical force to the player.
-								rigidbody2D.AddForce (new Vector2 (0f, jumpForce));
+					// Add a vertical force to the player.
+					rigidbody2D.AddForce (new Vector2 (0f, jumpForce));
 
-								// Make sure the player can't jump again until the jump conditions from Update are satisfied.
-								jump = false;
-						}
-
-				}
+					// Make sure the player can't jump again until the jump conditions from Update are satisfied.
+					jump = false;
+			}
+		}
 	}
 
 
 	void OnCollisionEnter2D (Collision2D col)
 	{
-				if (col.gameObject.tag == ("ground")) {
-						//Debug.Log("collision!!");
-						grounded = true;
-				}
-
-
-	}
-	/*
-	void OnCollisionStay2D(Collision2D col){
-		if (col.gameObject.name == "plateforme_jaune" && gameObject.name == "Paolo" && col.gameObject.GetComponent<Platforms>().fixedPlatform != true) {
-			col.gameObject.GetComponent<Platforms>().fixedPlatform = true;
-			Debug.Log("Platform fixed");
+		if (col.gameObject.tag == ("ground")) {
+				grounded = true;
 		}
-		}
-
-	void OnCollisionExit2D (Collision2D col){
-		if ( col.gameObject.name == "plateforme_jaune" && gameObject.name == "Paolo"  && col.gameObject.GetComponent<Platforms>().fixedPlatform != false) {
-			col.gameObject.GetComponent<Platforms>().fixedPlatform = false;
-			Debug.Log("Platform unfixed");
-		} 	
 	}
-	*/
 	
 	
 	void Flip ()
