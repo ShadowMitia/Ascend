@@ -14,23 +14,25 @@ public class PlatformCollision : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.gameObject.name  == "Paolo" && transform.parent.gameObject.GetComponent<Platforms>().fixedPlatform == false) {
+		if (other.gameObject.name  == "Paolo" /*&& transform.parent.gameObject.GetComponent<Platforms>().fixedPlatform == false*/) {
 						transform.parent.gameObject.GetComponent<Platforms> ().fixedPlatform = true;
 						Debug.Log ("Platform fixed");
-				} else {
-
-						other.collider2D.gameObject.transform.parent = transform;
 				}
+		other.collider2D.gameObject.transform.parent = transform;
+		other.GetComponent<PlayerControl> ().grounded = true;
+		other.GetComponent<Animator> ().SetBool ("Grounded", true);
+		other.GetComponent<Animator> ().SetBool ("Fall", false);
 	}
 
 	void OnTriggerExit2D(Collider2D other){
 
-		if (other.gameObject.name == "Paolo" && transform.parent.GetComponent<Platforms> ().fixedPlatform == true) {
+		if (other.gameObject.name == "Paolo" /*&& transform.parent.GetComponent<Platforms> ().fixedPlatform == true*/) {
 						transform.parent.gameObject.GetComponent<Platforms> ().fixedPlatform = false;
 						Debug.Log ("Platform unfixed");
-				} else {
-						other.collider2D.gameObject.transform.parent = null;
 				}
+		other.collider2D.gameObject.transform.parent = GameObject.Find ("PlayerControl").transform;
+		other.GetComponent<PlayerControl> ().grounded = false;
+		other.GetComponent<Animator> ().SetBool ("Grounded", false);
 	}
 
 

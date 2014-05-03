@@ -48,16 +48,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4b3708c5dd13554fa87cc51825c9a1a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0454b4a312407ef45a73a63558fd9086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controlledBy: {fileID: 0}
   goesUp: 0
-  distanceMax: 20
-  speed: 5
+  distanceMax: 0
+  speed: 0
   fixedPlatform: 1
   stopped: 0
-  platformController: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
