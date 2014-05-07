@@ -29,6 +29,7 @@ public class PlayerControl : MonoBehaviour
 	void Start(){
 		currentCharacter = false;
 		anim = GetComponent<Animator>();
+
 	}
 
 
@@ -37,10 +38,10 @@ void OnGUI(){
 	GUI.Box (new Rect (10,10,100,90), "Loader Menu");
 }
 
-	
-
 	void Update(){
+		transform.position = new Vector3 (transform.position.x, transform.position.y, 2);
 		if (currentCharacter == true) {
+			transform.position = new Vector3(transform.position.x, transform.position.y, 1);
 			if (Input.GetButtonDown ("Jump") && grounded){
 				jump = true;
 			}
@@ -114,21 +115,11 @@ void OnGUI(){
 	void OnCollisionEnter2D (Collision2D col)
 	{
 		if (col.gameObject.tag == "ground") {
-			grounded = true;
-			anim.SetBool("Grounded", true);
-		}
+						grounded = true;
+						anim.SetBool ("Grounded", true);
+				}
 	}
 
-	/*
-	void OnCollisionExit2D(Collision2D col){
-		if (col.gameObject.tag == "ground"){
-			grounded = false;
-			anim.SetBool("Grounded", false);
-		}
-	}
-	*/
-	
-	
 	void Flip ()
 	{
 		// Switch the way the player is labelled as facing.
@@ -139,7 +130,11 @@ void OnGUI(){
 		transform.localScale = theScale;
 	}
 
-
+	void OnClimb()
+	{
+		rigidbody2D.isKinematic = true;
+		transform.Translate (0, 100  * Time.deltaTime, 0);
+		}
 
 }
 
