@@ -28,7 +28,7 @@ GameObject:
   - 95: {fileID: 9500000}
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Paolo
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - 61: {fileID: 6100002}
   - 50: {fileID: 5000002}
   - 95: {fileID: 9500002}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bob
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - 95: {fileID: 9500004}
   - 61: {fileID: 6100004}
   - 50: {fileID: 5000004}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Greg
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ Animator:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ab15fd6b1b2017145a2bcbaeb9e199cc, type: 2}
+  m_Controller: {fileID: 9100000, guid: b50ca90268b2ca64f89d8d3d6bcfa09c, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 1
@@ -237,7 +237,7 @@ Animator:
   m_GameObject: {fileID: 100006}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9dd947f0cf311de44a2e19eb354abb23, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4b1ed19bdc5399a45ba4e09659a76a95, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 1
