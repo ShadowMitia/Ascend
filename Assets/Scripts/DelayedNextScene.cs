@@ -2,7 +2,11 @@
 using System.Collections;
 
 public class DelayedNextScene : MonoBehaviour {
-  float now;
+  private float now;
+  public Texture2D texture;
+
+	public SceneFadeInOut other;
+
 	// Use this for initialization
 	void Start () {
     now = Time.time;
@@ -12,7 +16,8 @@ public class DelayedNextScene : MonoBehaviour {
 	void Update () {
     if (Time.time - now > 3 || Input.GetKeyDown("space"))
       {
-        Application.LoadLevel("MainMenu");
+			other.EndScene();
       }
 	}
 }
+

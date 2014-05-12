@@ -4,7 +4,7 @@ using System.Collections;
 public class MainCharacterController : MonoBehaviour {
 
 	public int currentSelection = 0;
-	public int numberCharactersLevel = 1;
+	private int numberCharactersLevel;
 	private GameObject character;
 	
 	void Awake(){
@@ -16,6 +16,8 @@ public class MainCharacterController : MonoBehaviour {
 		controlledCharacterText.text = "Greg";
 		character = GameObject.Find("Greg");
 		character.GetComponent<PlayerControl> ().currentCharacter = true;
+		numberCharactersLevel = GameObject.FindGameObjectsWithTag ("Player").Length;
+		Debug.Log ("Number of players: " + numberCharactersLevel);
 	}
 
 	public GUIText controlledCharacterText;
