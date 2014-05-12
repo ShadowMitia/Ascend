@@ -29,7 +29,7 @@ GameObject:
   - 61: {fileID: 6100002}
   - 114: {fileID: 11400002}
   m_Layer: 0
-  m_Name: plateforme_jaune
+  m_Name: YellowPlatform
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
