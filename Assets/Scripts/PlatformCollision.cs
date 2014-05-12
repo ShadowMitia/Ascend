@@ -30,7 +30,7 @@ public class PlatformCollision : MonoBehaviour {
 						transform.parent.gameObject.GetComponent<Platforms> ().fixedPlatform = false;
 						Debug.Log ("Platform unfixed");
 				}
-		other.collider2D.gameObject.transform.parent = GameObject.Find ("PlayerControl").transform;
+		other.collider2D.gameObject.transform.parent = null;
 		other.GetComponent<PlayerControl> ().grounded = false;
 		other.GetComponent<Animator> ().SetBool ("Grounded", false);
 	}
