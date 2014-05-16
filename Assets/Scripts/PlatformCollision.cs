@@ -15,7 +15,7 @@ public class PlatformCollision : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.name  == "Paolo" /*&& transform.parent.gameObject.GetComponent<Platforms>().fixedPlatform == false*/) {
-						transform.parent.gameObject.GetComponent<Platforms> ().fixedPlatform = true;
+						transform.parent.gameObject.GetComponent<Platforms> ().fixedPlatform = true; 
 						Debug.Log ("Platform fixed");
 				}
 		other.collider2D.gameObject.transform.parent = transform;

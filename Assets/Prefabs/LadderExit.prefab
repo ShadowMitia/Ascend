@@ -11,7 +11,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   - 212: {fileID: 21200000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
