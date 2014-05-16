@@ -95,7 +95,7 @@ MonoBehaviour:
   goesUp: 0
   distanceMax: 20
   speed: 5
-  fixedPlatform: 0
+  fixedPlatform: 1
   stopped: 0
 --- !u!114 &11400002
 MonoBehaviour:

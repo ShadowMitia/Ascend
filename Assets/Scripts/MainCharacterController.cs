@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class MainCharacterController : MonoBehaviour {
-
-	public int currentSelection = 0;
+	
 	private int numberCharactersLevel;
 	private GameObject character;
 	
@@ -13,8 +12,11 @@ public class MainCharacterController : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		controlledCharacterText.text = "Greg";
-		character = GameObject.Find("Greg");
+		character = GameObject.FindGameObjectsWithTag("Player")[0];
+		foreach (GameObject element in GameObject.FindGameObjectsWithTag("Player")){
+			Debug.Log(element);
+		}
+		Debug.Log ("Current character: " + character);
 		character.GetComponent<PlayerControl> ().currentCharacter = true;
 		numberCharactersLevel = GameObject.FindGameObjectsWithTag ("Player").Length;
 		Debug.Log ("Number of players: " + numberCharactersLevel);
@@ -25,31 +27,34 @@ public class MainCharacterController : MonoBehaviour {
 	// Update is called once per frame
 
 	void Update () {
-		
-		if (Input.GetKeyDown ("1")) {
+		if (Input.GetKeyDown ("1") && GameObject.Find ("Greg") && numberCharactersLevel > 1) {
 			character.GetComponent<PlayerControl>().currentCharacter = false;
+			character.GetComponent<SpriteRenderer>().color = Color.gray;
 			character = GameObject.Find("Greg");
 			character.GetComponent<PlayerControl>().currentCharacter = true;
-			controlledCharacterText.text = "Greg";
-			currentSelection = 0;
+			character.GetComponent<SpriteRenderer>().color = Color.clear;
+			//currentSelection = 0;
 			Debug.Log ("Greg");
-		} else if (Input.GetKeyDown ("2") && numberCharactersLevel > 1) {
+		} else if (Input.GetKeyDown ("2") && GameObject.Find ("Paolo") && numberCharactersLevel > 1) {
 			character.GetComponent<PlayerControl>().currentCharacter = false;
+			character.GetComponent<SpriteRenderer>().color = Color.gray;
 			character = GameObject.Find("Paolo");
 			character.GetComponent<PlayerControl>().currentCharacter = true;
-			controlledCharacterText.text = "Paolo";
-			currentSelection = 1;
+			character.GetComponent<SpriteRenderer>().color = Color.clear;
+			//currentSelection = 1;
 			Debug.Log ("Paolo");
 			
-		} else if (Input.GetKeyUp ("3") && numberCharactersLevel > 2) {
+		} else if (Input.GetKeyUp ("3") && GameObject.Find("Bob") && numberCharactersLevel > 1) {
+			character.GetComponent<SpriteRenderer>().color = Color.gray;
 			character.GetComponent<PlayerControl>().currentCharacter = false;
-			controlledCharacterText.text = "Bob";
 			character = GameObject.Find ("Bob");
 			character.GetComponent<PlayerControl>().currentCharacter = true;
-			currentSelection = 2;
+			character.GetComponent<SpriteRenderer>().color = Color.clear;
+			//currentSelection = 2;
 			Debug.Log ("Bob");
 
-		} 
+		}
+		controlledCharacterText.text = gameObject.name;
   }
   
 }
