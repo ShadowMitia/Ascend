@@ -9,7 +9,7 @@ public class DelayedNextScene : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-    now = Time.time;
+    	now = Time.time;
 	}
 	
 	// Update is called once per frame

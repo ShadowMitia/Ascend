@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: b73a59a1723875d4b883a27d2e302999
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: SmallDynamicBeam
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 719
+        width: 402
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SmallControlledBeam
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 719
+        width: 403
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SmallStaticBeam
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 719
+        width: 402
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: NormalDynamicBeam
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 529
+        width: 802
+        height: 113
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: NormalControlledBeam
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 529
+        width: 804
+        height: 113
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: NormalStaticBeam
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 529
+        width: 802
+        height: 113
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: LargeDynamicBeam
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 338
+        width: 1203
+        height: 113
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: LargeControlledBeam
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 338
+        width: 1203
+        height: 113
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: LargeStaticBeam
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 338
+        width: 1202
+        height: 113
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: GroundBeam
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 149
+        width: 4602
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 

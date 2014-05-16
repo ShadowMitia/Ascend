@@ -18,6 +18,5 @@ public class NextLevel : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D col){
 		Debug.Log ("Test");
 		Application.LoadLevel (nextLevel);
-
 	}
 }

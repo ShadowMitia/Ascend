@@ -115,9 +115,9 @@ void OnGUI(){
 	void OnCollisionEnter2D (Collision2D col)
 	{
 		if (col.gameObject.tag == "ground") {
-						grounded = true;
-						anim.SetBool ("Grounded", true);
-				}
+			grounded = true;
+			anim.SetBool ("Grounded", true);
+		}
 	}
 
 	void Flip ()
@@ -130,11 +130,6 @@ void OnGUI(){
 		transform.localScale = theScale;
 	}
 
-	void OnClimb()
-	{
-		rigidbody2D.isKinematic = true;
-		transform.Translate (0, 100  * Time.deltaTime, 0);
-		}
 
 }
 

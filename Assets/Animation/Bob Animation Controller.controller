@@ -98,6 +98,28 @@ Transition:
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
+--- !u!1101 &110100099
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 110223963}
+  m_TransitionDuration: .100000001
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
+  - m_ConditionMode: 1
+    m_ConditionEvent: Climbing
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
 --- !u!1101 &110104364
 Transition:
   m_ObjectHideFlags: 3
@@ -455,7 +477,7 @@ State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Idling
+  m_Name: Bob_idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
@@ -470,7 +492,7 @@ State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Falling
+  m_Name: Bob_fall
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
@@ -480,12 +502,27 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110223963
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Bob_climb
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 1757184a0caaffb479aa9fea09cd628c, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 588, y: -264, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110228632
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Walking
+  m_Name: Bob_walk
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
@@ -500,13 +537,13 @@ State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Jumping
+  m_Name: Bob_jump
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 840d4cfb9b39679478eb7f404808975e, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 288, y: -312, z: 0}
+  m_Position: {x: 264, y: -312, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -523,12 +560,14 @@ StateMachine:
   - {fileID: 110283962}
   - {fileID: 110216165}
   - {fileID: 110228632}
+  - {fileID: 110223963}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
       first: {fileID: 0}
-      second: []
+      second:
+      - {fileID: 110100099}
     data:
       first: {fileID: 110200000}
       second:
@@ -544,13 +583,10 @@ StateMachine:
       - {fileID: 110104796}
       - {fileID: 110119564}
     data:
-      first: {fileID: 0}
-      second: []
-    data:
       first: {fileID: 110228632}
       second:
       - {fileID: 110174416}
       - {fileID: 110111348}
   m_MotionSetCount: 1
-  m_AnyStatePosition: {x: 528, y: -240, z: 0}
+  m_AnyStatePosition: {x: 552, y: -180, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

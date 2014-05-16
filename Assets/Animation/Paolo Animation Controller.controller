@@ -482,6 +482,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110251734
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Paolo_climb
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 0135b0c8b2a646049a7eab73b28835cc, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 491, y: -319, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110283962
 State:
   m_ObjectHideFlags: 3
@@ -526,6 +541,7 @@ StateMachine:
   - {fileID: 110216165}
   - {fileID: 110288257}
   - {fileID: 110228632}
+  - {fileID: 110251734}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
