@@ -4,8 +4,6 @@ using System.Collections;
 public class PlayButton : MonoBehaviour {
 	public string nextScene;
 	public Font font;
-	public string text;
-
 	public Sprite image;
 
 	// Use this for initialization
@@ -13,10 +11,12 @@ public class PlayButton : MonoBehaviour {
 	}
 
 	void OnGUI() {
+		/*
 		GUI.backgroundColor = Color.clear;
-		if (GUILayout.Button ( image.texture)) {
+		if (GUILayout.Button ( image.texture ) {
 			Application.LoadLevel (nextScene);
 		}
+		*/
 
 		/*
 		GUI.backgroundColor = Color.clear;
