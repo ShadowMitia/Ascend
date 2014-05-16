@@ -39,7 +39,7 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   - m_Name: Selected
-    m_Type: 4
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -223,7 +223,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Selected
+    m_ConditionEvent: Grounded
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -546,6 +546,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110218869
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Greg_idle2
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 9527183a0e6b4b24bad4ee095243e660, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 623, y: -19, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110228632
 State:
   m_ObjectHideFlags: 3
@@ -606,13 +621,10 @@ StateMachine:
   - {fileID: 110228632}
   - {fileID: 110217480}
   - {fileID: 110240158}
+  - {fileID: 110218869}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
-    data:
-      first: {fileID: 110240158}
-      second:
-      - {fileID: 110118207}
     data:
       first: {fileID: 0}
       second:
@@ -633,9 +645,6 @@ StateMachine:
       - {fileID: 110104796}
       - {fileID: 110119564}
     data:
-      first: {fileID: 0}
-      second: []
-    data:
       first: {fileID: 110228632}
       second:
       - {fileID: 110174416}
@@ -643,6 +652,10 @@ StateMachine:
     data:
       first: {fileID: 110217480}
       second: []
+    data:
+      first: {fileID: 110240158}
+      second:
+      - {fileID: 110118207}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 732, y: -360, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

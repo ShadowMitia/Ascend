@@ -9,7 +9,7 @@ public class Platforms : MonoBehaviour {
     public int distanceMax;
     public float speed;
     public bool fixedPlatform = true;
-    protected bool goesPositive = false;
+    public bool goesPositive = false;
     protected Transform pos;
 	protected Transform originalPos;
 	public bool stopped = false;

@@ -20,8 +20,7 @@ public class PlatformCollision : MonoBehaviour {
 				}
 		other.collider2D.gameObject.transform.parent = transform;
 		other.GetComponent<PlayerControl> ().grounded = true;
-		other.GetComponent<Animator> ().SetBool ("Grounded", true);
-		other.GetComponent<Animator> ().SetBool ("Fall", false);
+		Debug.Log ("On platform");
 	}
 
 	void OnTriggerExit2D(Collider2D other){
@@ -32,7 +31,11 @@ public class PlatformCollision : MonoBehaviour {
 				}
 		other.collider2D.gameObject.transform.parent = null;
 		other.GetComponent<PlayerControl> ().grounded = false;
-		other.GetComponent<Animator> ().SetBool ("Grounded", false);
+		if (other.GetComponent<PlayerControl> ().jump = false) {
+			other.GetComponent<Animator> ().SetBool ("Fall", true);
+		}
+		Debug.Log ("Out platform");
+
 	}
 
 

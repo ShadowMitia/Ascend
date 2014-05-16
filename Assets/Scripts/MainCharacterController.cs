@@ -30,25 +30,25 @@ public class MainCharacterController : MonoBehaviour {
 		Debug.Log ("Number of players: " + numberCharactersLevel);
 		if (Input.GetKeyDown ("1") && GameObject.Find ("Greg") && numberCharactersLevel > 1) {
 			character.GetComponent<PlayerControl>().currentCharacter = false;
-			character.GetComponent<Animator>().SetBool("Selected", false);
+			character.GetComponent<Animator>().SetTrigger("Unselected");
 			character = GameObject.Find("Greg");
 			character.GetComponent<PlayerControl>().currentCharacter = true;
-			character.GetComponent<Animator>().SetBool("Selected", true);
+			character.GetComponent<Animator>().SetTrigger("Selected");
 			Debug.Log ("Greg");
 		} else if (Input.GetKeyDown ("2") && GameObject.Find ("Paolo") && numberCharactersLevel > 1) {
-			character.GetComponent<Animator>().SetBool("Selected", false);
+			character.GetComponent<Animator>().SetTrigger("Unselected");
 			character.GetComponent<PlayerControl>().currentCharacter = false;
 			character = GameObject.Find("Paolo");
 			character.GetComponent<PlayerControl>().currentCharacter = true;
-			character.GetComponent<Animator>().SetBool("Selected", true);
+			character.GetComponent<Animator>().SetTrigger("Selected");
 			Debug.Log ("Paolo");
 			
 		} else if (Input.GetKeyUp ("3") && GameObject.Find("Bob") && numberCharactersLevel > 1) {
-			character.GetComponent<Animator>().SetBool("Selected", false);
+			character.GetComponent<Animator>().SetTrigger("Unselected");
 			character.GetComponent<PlayerControl>().currentCharacter = false;
 			character = GameObject.Find ("Bob");
 			character.GetComponent<PlayerControl>().currentCharacter = true;
-			character.GetComponent<Animator>().SetBool("Selected", true);
+			character.GetComponent<Animator>().SetTrigger("Selected");
 			Debug.Log ("Bob");
 
 		}

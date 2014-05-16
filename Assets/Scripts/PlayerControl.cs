@@ -76,8 +76,8 @@ void OnGUI(){
 					Flip ();
 			//If the player is falling
 			if (!grounded) {
-					anim.SetBool("Grounded", false);
-
+				anim.SetBool("Grounded", false);
+				anim.SetBool("Fall", true);
 			}
 			// If the player should jump...
 			if (jump) {
@@ -110,8 +110,7 @@ void OnGUI(){
 
 		}
 	}
-
-
+	
 	void OnCollisionEnter2D (Collision2D col)
 	{
 		if (col.gameObject.tag == "ground") {
@@ -119,6 +118,12 @@ void OnGUI(){
 			anim.SetBool ("Grounded", true);
 		}
 	}
+
+	void OnCollisionExit2D(Collision2D col){
+		grounded = false;
+		}
+
+
 
 	void Flip ()
 	{

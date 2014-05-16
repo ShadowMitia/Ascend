@@ -1,34 +1,20 @@
 ﻿<Properties>
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerControl.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayButton.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\DelayedNextScene.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MainCharacterController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerControl.cs" Line="116" Column="22" />
+      <File FileName="Assets\Scripts\PlayButton.cs" Line="28" Column="33" />
+      <File FileName="Assets\Scripts\DelayedNextScene.cs" Line="24" Column="1" />
+      <File FileName="Assets\Scripts\MainCharacterController.cs" Line="31" Column="89" />
+      <File FileName="Assets\Scripts\PlayerControl.cs" Line="79" Column="37" />
+      <File FileName="Assets\Scripts\Player.cs" Line="36" Column="1" />
       <File FileName="Assets\Scripts\SceneFadeInOut.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game.cs" Line="17" Column="1" />
+      <File FileName="Assets\Scripts\Game.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ResetGame.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\NextLevel.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\LadderExit.cs" Line="1" Column="1" />
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MainCharacterController.cs">
-    <Files>
-      <File FileName="Assets\Scripts\PlayButton.cs" Line="28" Column="33" />
-      <File FileName="Assets\Scripts\DelayedNextScene.cs" Line="24" Column="1" />
-      <File FileName="Assets\Scripts\MainCharacterController.cs" Line="30" Column="61" />
-      <File FileName="Assets\Scripts\PlayerControl.cs" Line="136" Column="1" />
-      <File FileName="Assets\Scripts\Player.cs" Line="36" Column="1" />
-      <File FileName="Assets\Scripts\SceneFadeInOut.cs" Line="73" Column="2" />
-      <File FileName="Assets\Scripts\Game.cs" Line="17" Column="1" />
-      <File FileName="Assets\Scripts\ResetGame.cs" Line="20" Column="1" />
-      <File FileName="Assets\Scripts\NextLevel.cs" Line="23" Column="1" />
-      <File FileName="Assets\Scripts\LadderExit.cs" Line="22" Column="1" />
-      <File FileName="Assets\Scripts\Platforms.cs" Line="24" Column="39" />
->>>>>>> 260e43a30a342744232e66e872783face58b1e1d
+      <File FileName="Assets\Scripts\Platforms.cs" Line="68" Column="1" />
+      <File FileName="Assets\Scripts\PlatformCollision.cs" Line="18" Column="83" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
