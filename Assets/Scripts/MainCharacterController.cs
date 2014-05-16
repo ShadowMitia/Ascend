@@ -19,7 +19,7 @@ public class MainCharacterController : MonoBehaviour {
 		Debug.Log ("Current character: " + character);
 		character.GetComponent<PlayerControl> ().currentCharacter = true;
 		numberCharactersLevel = GameObject.FindGameObjectsWithTag ("Player").Length;
-		Debug.Log ("Number of players: " + numberCharactersLevel);
+
 	}
 
 	public GUIText controlledCharacterText;
@@ -27,30 +27,28 @@ public class MainCharacterController : MonoBehaviour {
 	// Update is called once per frame
 
 	void Update () {
+		Debug.Log ("Number of players: " + numberCharactersLevel);
 		if (Input.GetKeyDown ("1") && GameObject.Find ("Greg") && numberCharactersLevel > 1) {
 			character.GetComponent<PlayerControl>().currentCharacter = false;
-			character.GetComponent<SpriteRenderer>().color = Color.gray;
+			character.GetComponent<Animator>().SetBool("Selected", false);
 			character = GameObject.Find("Greg");
 			character.GetComponent<PlayerControl>().currentCharacter = true;
-			character.GetComponent<SpriteRenderer>().color = Color.clear;
-			//currentSelection = 0;
+			character.GetComponent<Animator>().SetBool("Selected", true);
 			Debug.Log ("Greg");
 		} else if (Input.GetKeyDown ("2") && GameObject.Find ("Paolo") && numberCharactersLevel > 1) {
+			character.GetComponent<Animator>().SetBool("Selected", false);
 			character.GetComponent<PlayerControl>().currentCharacter = false;
-			character.GetComponent<SpriteRenderer>().color = Color.gray;
 			character = GameObject.Find("Paolo");
 			character.GetComponent<PlayerControl>().currentCharacter = true;
-			character.GetComponent<SpriteRenderer>().color = Color.clear;
-			//currentSelection = 1;
+			character.GetComponent<Animator>().SetBool("Selected", true);
 			Debug.Log ("Paolo");
 			
 		} else if (Input.GetKeyUp ("3") && GameObject.Find("Bob") && numberCharactersLevel > 1) {
-			character.GetComponent<SpriteRenderer>().color = Color.gray;
+			character.GetComponent<Animator>().SetBool("Selected", false);
 			character.GetComponent<PlayerControl>().currentCharacter = false;
 			character = GameObject.Find ("Bob");
 			character.GetComponent<PlayerControl>().currentCharacter = true;
-			character.GetComponent<SpriteRenderer>().color = Color.clear;
-			//currentSelection = 2;
+			character.GetComponent<Animator>().SetBool("Selected", true);
 			Debug.Log ("Bob");
 
 		}

@@ -45,7 +45,7 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: Bob_idle1
+    - name: Greg_idle1
       rect:
         serializedVersion: 2
         x: 70
@@ -54,7 +54,7 @@ TextureImporter:
         height: 230
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: Bob_idle2
+    - name: Greg_idle2
       rect:
         serializedVersion: 2
         x: 250
@@ -63,7 +63,7 @@ TextureImporter:
         height: 270
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: Bob_idle3
+    - name: Greg_idle3
       rect:
         serializedVersion: 2
         x: 550
