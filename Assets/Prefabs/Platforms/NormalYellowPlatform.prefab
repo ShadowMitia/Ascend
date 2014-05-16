@@ -9,10 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
+  - 61: {fileID: 6100000}
   m_Layer: 0
-  m_Name: BobControlledSmallPlatform
+  m_Name: NormalYellowPlatform
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,8 +42,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.72952461, y: 4.44862127, z: 0}
-  m_LocalScale: {x: 1.00710702, y: 1, z: 1}
+  m_LocalPosition: {x: 6.22904491, y: 2.81787062, z: 0}
+  m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -54,8 +54,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0789060295, y: .14893961, z: 0}
-  m_LocalScale: {x: .992943108, y: 1, z: 1}
+  m_LocalPosition: {x: .0729141235, y: .141193628, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!61 &6100000
@@ -67,8 +67,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 3.9000001, y: 1.10000002}
-  m_Center: {x: 0, y: .550000012}
+  m_Size: {x: 8.00671577, y: 1.12}
+  m_Center: {x: 1.43051147e-06, y: 0}
 --- !u!61 &6100002
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -78,8 +78,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 3.79447985, y: .350163698}
-  m_Center: {x: -.0754489899, y: .458852649}
+  m_Size: {x: 7.78119278, y: .350163698}
+  m_Center: {x: -.0754494667, y: .458852649}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -92,10 +92,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlledBy: {fileID: 0}
-  goesUp: 1
+  goesUp: 0
   distanceMax: 20
   speed: 5
-  fixedPlatform: 1
+  fixedPlatform: 0
   stopped: 0
 --- !u!114 &11400002
 MonoBehaviour:
@@ -127,9 +127,9 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 3
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_SortingLayerID: 1024582385
-  m_Sprite: {fileID: 21300002, guid: b73a59a1723875d4b883a27d2e302999, type: 3}
+  m_Sprite: {fileID: 21300006, guid: b73a59a1723875d4b883a27d2e302999, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

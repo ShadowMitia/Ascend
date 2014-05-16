@@ -16,4 +16,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/lvl1.unity
   - enabled: 1
-    path: Assets/Scenes/lvl2.unity
+    path: Assets/Scenes/PlatformsTest.unity
