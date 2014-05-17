@@ -235,10 +235,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controlledBy: {fileID: 0}
   goesUp: 0
-  distanceMax: 20
+  distanceMax: 40
   speed: 5
   fixedPlatform: 0
-  goesPositive: 0
+  goesPositive: 1
   stopped: 0
 --- !u!212 &302327649
 SpriteRenderer:
@@ -330,6 +330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d222e77e304207943a9877dcb0982f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: 
+  delay: 2
 --- !u!61 &474261060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1121,6 +1123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d222e77e304207943a9877dcb0982f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: 
+  delay: 2
 --- !u!61 &791625497
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1258,6 +1262,10 @@ Prefab:
     - target: {fileID: 400000, guid: 49307408bce3f1148b60c9b32dbfe5c7, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 49307408bce3f1148b60c9b32dbfe5c7, type: 2}
+      propertyPath: distanceMax
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49307408bce3f1148b60c9b32dbfe5c7, type: 2}
@@ -2228,6 +2236,7 @@ GameObject:
   - 61: {fileID: 1696953630}
   - 114: {fileID: 1696953629}
   - 212: {fileID: 1696953628}
+  - 114: {fileID: 1696953632}
   m_Layer: 9
   m_Name: LadderExit
   m_TagString: Untagged
@@ -2271,6 +2280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d222e77e304207943a9877dcb0982f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: 
+  delay: 2
 --- !u!61 &1696953630
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2294,6 +2305,19 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1696953632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1696953627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d222e77e304207943a9877dcb0982f49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: lvl1
+  delay: 2
 --- !u!1001 &1783998093
 Prefab:
   m_ObjectHideFlags: 0
@@ -2328,6 +2352,14 @@ Prefab:
     - target: {fileID: 400000, guid: 49307408bce3f1148b60c9b32dbfe5c7, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 49307408bce3f1148b60c9b32dbfe5c7, type: 2}
+      propertyPath: goesPositive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 49307408bce3f1148b60c9b32dbfe5c7, type: 2}
+      propertyPath: distanceMax
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49307408bce3f1148b60c9b32dbfe5c7, type: 2}
@@ -2430,7 +2462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controlledBy: {fileID: 0}
   goesUp: 0
-  distanceMax: 20
+  distanceMax: 40
   speed: 5
   fixedPlatform: 0
   goesPositive: 0

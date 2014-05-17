@@ -18,7 +18,7 @@ public class Platforms : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		pos = GetComponent<Transform> ();
-		currentDistance = 0;
+		currentDistance = distanceMax / 2;
 
 	}
 
@@ -41,7 +41,7 @@ public class Platforms : MonoBehaviour {
 				currentDistance++;
 			}
 			
-			if (currentDistance == 0){
+			if (currentDistance <= 0){
 				goesPositive = false;		
 			} else if (currentDistance >= distanceMax) {
 				goesPositive = true;
