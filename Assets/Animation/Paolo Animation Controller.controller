@@ -121,10 +121,6 @@ Transition:
   m_TransitionDuration: .100000001
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 5
-    m_ConditionEvent: 
-    m_EventTreshold: 0
-    m_ExitTime: .899999976
   - m_ConditionMode: 1
     m_ConditionEvent: Climbing
     m_EventTreshold: 0
@@ -621,7 +617,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 1757184a0caaffb479aa9fea09cd628c, type: 2}
+  - {fileID: 7400000, guid: 0135b0c8b2a646049a7eab73b28835cc, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 480, y: -516, z: 0}
   m_IKOnFeet: 0
@@ -718,10 +714,20 @@ StateMachine:
       - {fileID: 110133540}
       - {fileID: 110146644}
     data:
+      first: {fileID: 110283962}
+      second:
+      - {fileID: 110162826}
+    data:
       first: {fileID: 110216165}
       second:
       - {fileID: 110104796}
       - {fileID: 110119564}
+    data:
+      first: {fileID: 110228632}
+      second:
+      - {fileID: 110174416}
+      - {fileID: 110111348}
+      - {fileID: 110121897}
     data:
       first: {fileID: 110223963}
       second: []
@@ -730,19 +736,9 @@ StateMachine:
       second:
       - {fileID: 110107656}
     data:
-      first: {fileID: 110228632}
-      second:
-      - {fileID: 110174416}
-      - {fileID: 110111348}
-      - {fileID: 110121897}
-    data:
       first: {fileID: 110273583}
       second:
       - {fileID: 110105021}
-    data:
-      first: {fileID: 110283962}
-      second:
-      - {fileID: 110162826}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 168, y: -504, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

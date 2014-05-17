@@ -31,7 +31,7 @@ public class PlatformCollision : MonoBehaviour {
 				}
 		other.collider2D.gameObject.transform.parent = null;
 		other.GetComponent<PlayerControl> ().grounded = false;
-		if (other.GetComponent<PlayerControl> ().jump = false) {
+		if (other.GetComponent<PlayerControl> ().jump == false) {
 			other.GetComponent<Animator> ().SetBool ("Fall", true);
 		}
 		Debug.Log ("Out platform");

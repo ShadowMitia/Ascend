@@ -19,6 +19,7 @@ public class Platforms : MonoBehaviour {
     void Start () {
 		pos = GetComponent<Transform> ();
 		currentDistance = 0;
+
 	}
 
     // Update is called once per frame
@@ -33,7 +34,7 @@ public class Platforms : MonoBehaviour {
 
 	void FixedUpdate(){
 
-		if (fixedPlatform == false && stopped != true) {
+		if (fixedPlatform == false) {
 			if (goesPositive) {
 				currentDistance--;
 			} else {
@@ -42,16 +43,16 @@ public class Platforms : MonoBehaviour {
 			
 			if (currentDistance == 0){
 				goesPositive = false;		
-			} else if (currentDistance == distanceMax) {
+			} else if (currentDistance >= distanceMax) {
 				goesPositive = true;
 			}
 
 			if (goesUp){
 				if (goesPositive){
-					pos.position = new Vector3(pos.position.x , pos.position.y + speed *Time.deltaTime,pos.position.z) ;
+					pos.position = new Vector3(pos.position.x , pos.position.y + speed *Time.deltaTime, pos.position.z) ;
 				}
 				else {
-					pos.position = new Vector3(pos.position.x , pos.position.y - speed *Time.deltaTime,pos.position.z) ;
+					pos.position = new Vector3(pos.position.x , pos.position.y - speed *Time.deltaTime, pos.position.z) ;
 				}
 			}
 			else {
