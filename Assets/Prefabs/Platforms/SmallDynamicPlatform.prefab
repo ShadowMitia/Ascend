@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PlatformCollider
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400002}
   - 61: {fileID: 6100002}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SmallDynamicPlatform
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0729141235, y: .141193628, z: 0}
+  m_LocalPosition: {x: -1.9069159, y: .178633466, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -52,8 +52,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.62496972, y: -3.03811288, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
+  m_LocalPosition: {x: 3.38914108, y: 5.88014603, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -67,8 +67,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 3.81106091, y: .350163698}
-  m_Center: {x: -.0800127983, y: .45885253}
+  m_Size: {x: .228645265, y: 1.06361723}
+  m_Center: {x: 3.93077135, y: -.153167263}
 --- !u!61 &6100002
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -107,6 +107,7 @@ MonoBehaviour:
   distanceMax: 20
   speed: 5
   fixedPlatform: 0
+  goesPositive: 0
   stopped: 0
 --- !u!212 &21200000
 SpriteRenderer:
@@ -126,9 +127,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_SortingLayerID: 1535931219
+  m_SortingLayerID: 1024582385
   m_Sprite: {fileID: 21300000, guid: b73a59a1723875d4b883a27d2e302999, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
