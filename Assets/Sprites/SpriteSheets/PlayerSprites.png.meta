@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: ce621e81aa5614588a862a30acb6c303
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spriteshit2
+    21300002: PlayerSprites
+    21300004: GregWalk1
+    21300006: GregWalk4
+    21300008: GregJump1
+    21300010: GregJump2
+    21300012: GregFall
+    21300014: YelloPlatform
+    21300016: PlayerSprites_6
+    21300018: PlayerSprites_7
+    21300020: PlayerSprites_8
+    21300022: GregWalk2
+    21300024: GregWalk3
+    21300026: PaoloStill
+    21300028: PaoloWalk1
+    21300030: PaoloWalk2
+    21300032: PaoloWalk3
+    21300034: PaoloWalk4
+    21300036: PaoloJump1
+    21300038: PaoloJump2
+    21300040: PaoloFall
+    21300042: GrayPlatform
+    21300044: BobStill
+    21300046: BobWalk1
+    21300048: BobWalk2
+    21300050: BobWalk3
+    21300052: BobWalk4
+    21300054: BobJump1
+    21300056: BobJump2
+    21300058: BobFall
+    21300060: Ladder
+    21300062: GregStill
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: GregWalk1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 670
+        width: 182
+        height: 259
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GregWalk4
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 670
+        width: 152
+        height: 250
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GregJump1
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 670
+        width: 170
+        height: 241
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GregJump2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 670
+        width: 200
+        height: 280
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GregFall
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 670
+        width: 200
+        height: 230
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: YelloPlatform
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 709
+        width: 390
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerSprites_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerSprites_7
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 700
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerSprites_8
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 700
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GregWalk2
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 670
+        width: 136
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GregWalk3
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 670
+        width: 193
+        height: 241
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PaoloStill
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 390
+        width: 160
+        height: 230
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PaoloWalk1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 390
+        width: 170
+        height: 230
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PaoloWalk2
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 390
+        width: 131
+        height: 241
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PaoloWalk3
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 390
+        width: 172
+        height: 230
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PaoloWalk4
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 390
+        width: 134
+        height: 230
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PaoloJump1
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 390
+        width: 170
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PaoloJump2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 390
+        width: 182
+        height: 220
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PaoloFall
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 390
+        width: 200
+        height: 191
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrayPlatform
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 539
+        width: 390
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BobStill
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 9
+        width: 130
+        height: 351
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BobWalk1
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 9
+        width: 172
+        height: 342
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BobWalk2
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 9
+        width: 142
+        height: 351
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BobWalk3
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 10
+        width: 169
+        height: 342
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BobWalk4
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 9
+        width: 140
+        height: 351
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BobJump1
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 9
+        width: 172
+        height: 321
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BobJump2
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 19
+        width: 261
+        height: 342
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BobFall
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 39
+        width: 362
+        height: 282
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ladder
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 60
+        width: 92
+        height: 390
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GregStill
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 670
+        width: 143
+        height: 241
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
