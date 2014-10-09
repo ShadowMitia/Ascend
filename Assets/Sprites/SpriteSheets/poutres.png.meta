@@ -3,6 +3,16 @@ guid: 23351fa66cbe84544b7b8e22c696c60a
 TextureImporter:
   fileIDToRecycleName:
     21300000: poutres
+    21300002: GoldSmallLadder
+    21300004: SilverSmallLadder
+    21300006: GraySmallLadder
+    21300008: GoldMediumLadder
+    21300010: SilverMediumLadder
+    21300012: GrayMediumLadder
+    21300014: GoldLargeLadder
+    21300016: SilverLargeLadder
+    21300018: GrayLargeLadder
+    21300020: MassivePlaform
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -22,17 +32,17 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -43,6 +53,106 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: GoldSmallLadder
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 719
+        width: 401
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverSmallLadder
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 719
+        width: 401
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GraySmallLadder
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 719
+        width: 401
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldMediumLadder
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 530
+        width: 802
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverMediumLadder
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 530
+        width: 802
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrayMediumLadder
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 530
+        width: 802
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldLargeLadder
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 341
+        width: 1203
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverLargeLadder
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 341
+        width: 1203
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrayLargeLadder
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 341
+        width: 1203
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MassivePlaform
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 148
+        width: 4600
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
