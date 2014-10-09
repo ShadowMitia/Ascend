@@ -1,6 +1,34 @@
 fileFormatVersion: 2
 guid: 8d49a82948efde44f8c88ecbeb5e5e59
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Greg_Idle
+    21300002: Greg_walk-1
+    21300004: Greg_walk-2
+    21300006: Greg_walk-3
+    21300008: Greg_walk-4
+    21300010: Greg_jump-1
+    21300012: Greg_jump-2
+    21300014: Greg_jump-3
+    21300016: PlatformeJaune
+    21300018: Paolo_Idle
+    21300020: Paolo_walk-1
+    21300022: Paolo_walk-2
+    21300024: Paolo_walk-3
+    21300026: Paolo_walk-4
+    21300028: Paolo_jump-1
+    21300030: Paolo_jump-2
+    21300032: Paolo_jump-3
+    21300034: PlatformeGrise
+    21300036: Bob_Idle
+    21300038: Bob_walk-1
+    21300040: Bob_walk-2
+    21300042: Bob_walk-3
+    21300044: Bob_walk-4
+    21300046: Bob_jump-1
+    21300048: Bob_jump-2
+    21300050: Bob_jump-3
+    21300052: Ladder
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +83,7 @@ TextureImporter:
         height: 240
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greg_walk-1
       rect:
         serializedVersion: 2
@@ -63,6 +93,7 @@ TextureImporter:
         height: 260
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greg_walk-2
       rect:
         serializedVersion: 2
@@ -72,6 +103,7 @@ TextureImporter:
         height: 270
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greg_walk-3
       rect:
         serializedVersion: 2
@@ -81,6 +113,7 @@ TextureImporter:
         height: 240
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greg_walk-4
       rect:
         serializedVersion: 2
@@ -90,6 +123,7 @@ TextureImporter:
         height: 250
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greg_jump-1
       rect:
         serializedVersion: 2
@@ -99,6 +133,7 @@ TextureImporter:
         height: 240
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greg_jump-2
       rect:
         serializedVersion: 2
@@ -108,6 +143,7 @@ TextureImporter:
         height: 271
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greg_jump-3
       rect:
         serializedVersion: 2
@@ -117,6 +153,7 @@ TextureImporter:
         height: 230
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: PlatformeJaune
       rect:
         serializedVersion: 2
@@ -126,6 +163,7 @@ TextureImporter:
         height: 110
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Paolo_Idle
       rect:
         serializedVersion: 2
@@ -135,6 +173,7 @@ TextureImporter:
         height: 230
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Paolo_walk-1
       rect:
         serializedVersion: 2
@@ -144,6 +183,7 @@ TextureImporter:
         height: 230
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Paolo_walk-2
       rect:
         serializedVersion: 2
@@ -153,6 +193,7 @@ TextureImporter:
         height: 240
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Paolo_walk-3
       rect:
         serializedVersion: 2
@@ -162,6 +203,7 @@ TextureImporter:
         height: 230
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Paolo_walk-4
       rect:
         serializedVersion: 2
@@ -171,6 +213,7 @@ TextureImporter:
         height: 230
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Paolo_jump-1
       rect:
         serializedVersion: 2
@@ -180,6 +223,7 @@ TextureImporter:
         height: 200
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Paolo_jump-2
       rect:
         serializedVersion: 2
@@ -189,6 +233,7 @@ TextureImporter:
         height: 220
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Paolo_jump-3
       rect:
         serializedVersion: 2
@@ -198,6 +243,7 @@ TextureImporter:
         height: 190
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: PlatformeGrise
       rect:
         serializedVersion: 2
@@ -207,6 +253,7 @@ TextureImporter:
         height: 110
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bob_Idle
       rect:
         serializedVersion: 2
@@ -216,6 +263,7 @@ TextureImporter:
         height: 350
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bob_walk-1
       rect:
         serializedVersion: 2
@@ -225,6 +273,7 @@ TextureImporter:
         height: 340
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bob_walk-2
       rect:
         serializedVersion: 2
@@ -234,6 +283,7 @@ TextureImporter:
         height: 350
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bob_walk-3
       rect:
         serializedVersion: 2
@@ -243,6 +293,7 @@ TextureImporter:
         height: 340
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bob_walk-4
       rect:
         serializedVersion: 2
@@ -252,6 +303,7 @@ TextureImporter:
         height: 350
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bob_jump-1
       rect:
         serializedVersion: 2
@@ -261,6 +313,7 @@ TextureImporter:
         height: 320
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bob_jump-2
       rect:
         serializedVersion: 2
@@ -270,6 +323,7 @@ TextureImporter:
         height: 340
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bob_jump-3
       rect:
         serializedVersion: 2
@@ -279,6 +333,7 @@ TextureImporter:
         height: 280
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Ladder
       rect:
         serializedVersion: 2
@@ -288,5 +343,6 @@ TextureImporter:
         height: 390
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
