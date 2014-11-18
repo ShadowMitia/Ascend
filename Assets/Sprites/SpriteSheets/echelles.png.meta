@@ -3,6 +3,16 @@ guid: b5d558f60ace6421d8e1e6ca9d35c91b
 TextureImporter:
   fileIDToRecycleName:
     21300000: echelles
+    21300002: PaoloClimb1
+    21300004: GregClimb1
+    21300006: BobClimb3
+    21300008: BobClimb1
+    21300010: PaoloClimb2
+    21300012: GregClimb2
+    21300014: LadderClimb
+    21300016: PaoloClimb3
+    21300018: GregClimb3
+    21300020: BobClimb2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -22,17 +32,17 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -43,6 +53,106 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: PaoloClimb1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 659
+        width: 132
+        height: 262
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GregClimb1
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 659
+        width: 140
+        height: 271
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BobClimb3
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 590
+        width: 181
+        height: 340
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BobClimb1
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 580
+        width: 181
+        height: 341
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PaoloClimb2
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 380
+        width: 142
+        height: 231
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GregClimb2
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 380
+        width: 140
+        height: 240
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadderClimb
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 60
+        width: 101
+        height: 391
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PaoloClimb3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 70
+        width: 132
+        height: 261
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GregClimb3
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 70
+        width: 140
+        height: 271
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BobClimb2
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 60
+        width: 181
+        height: 300
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
